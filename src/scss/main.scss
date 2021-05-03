@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: brown;
+}
+.__container {
+  background: cadetblue;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  header {
+    height: 100vh;
+    width: 100%;
+    // background: linear-gradient(
+    //   to bottom right,
+    //   rgb(54, 91, 158),
+    //   rgb(189, 189, 189),
+    //   rgb(81, 90, 131)
+    // );
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    nav {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      height: 10%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: linear-gradient(
+        to top right,
+        rgb(86, 153, 207),
+        rgb(38, 133, 197),
+        rgb(95, 166, 224)
+      );
+      .__nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2em;
+        transition: 1s;
+        &:hover {
+          background: rgb(224, 212, 36);
+        }
+      }
+    }
+    // .__intro {
+    //   //   background: rgb(39, 80, 126);
+    //   z-index: 1;
+    //   border-radius: 5px;
+    //   color: whitesmoke;
+    //   margin: 5%;
+    //   width: 75%;
+    //   text-align: center;
+    //   h3 {
+    //     font-weight: 300;
+    //     font-size: 2em;
+    //     letter-spacing: 1px;
+    //     color: rgb(0, 89, 255);
+    //   }
+    // }
+    .header__main {
+      height: 100%;
+      width: 100%;
+      background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+      .__collection {
+        height: 75%;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        overflow: hidden;
+        animation: zoom 1s linear;
+        .__image {
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.01);
+            opacity: 1;
+          }
+        }
+        .image__one {
+          flex: 12%;
+          height: 50%;
+          background: url("../Images/Bishnu-resized.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .image__two {
+          flex: 40%;
+          height: 50%;
+          background: url("../Images/IMG_3304.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .image__three {
+          flex: 20%;
+          height: 50%;
+
+          background: url("../Images/IMG_4916.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .image__four {
+          flex: 30%;
+          height: 50%;
+          background: url("../Images/pexels-philipp-brügger-5894435.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .image__five {
+          flex: 20%;
+          height: 50%;
+          background: url("../Images/IMG_0254.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 162, 255);
+  }
+  footer {
+    height: 100vh;
+    width: 100%;
+    background: rgb(212, 0, 255);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

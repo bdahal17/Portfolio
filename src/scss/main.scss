@@ -39,7 +39,6 @@ body {
     nav {
       position: fixed;
       top: 0;
-      z-index: 1;
       height: 10%;
       width: 100%;
       display: flex;
@@ -65,41 +64,63 @@ body {
         }
       }
     }
-    // .__intro {
-    //   //   background: rgb(39, 80, 126);
-    //   z-index: 1;
-    //   border-radius: 5px;
-    //   color: whitesmoke;
-    //   margin: 5%;
-    //   width: 75%;
-    //   text-align: center;
-    //   h3 {
-    //     font-weight: 300;
-    //     font-size: 2em;
-    //     letter-spacing: 1px;
-    //     color: rgb(0, 89, 255);
-    //   }
-    // }
     .header__main {
       height: 100%;
       width: 100%;
-      background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 100px;
-      .__collection {
-        height: 75%;
-        width: 75%;
+      background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+      .__skills {
+        height: 100%;
+        width: 65%;
+      }
+      .__profile {
+        height: 100%;
+        width: 35%;
+        padding: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        border-radius: 10px;
-        overflow: hidden;
-        animation: zoom 1s linear;
+        .__card {
+          background: azure;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .photo__div {
+            background: url("../Images/Bishnu-resized.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 75%;
+            height: 50%;
+            border-radius: 50%;
+            margin-top: 10px;
+          }
+          .dev__div {
+            height: 35%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            h4 {
+              font-weight: 400;
+            }
+          }
+          .__button {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            button {
+              width: 100px;
+            }
+          }
+        }
         .__image {
           cursor: pointer;
           transition: 0.5s;
@@ -107,42 +128,6 @@ body {
             transform: scale(1.01);
             opacity: 1;
           }
-        }
-        .image__one {
-          flex: 12%;
-          height: 50%;
-          background: url("../Images/Bishnu-resized.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__two {
-          flex: 40%;
-          height: 50%;
-          background: url("../Images/IMG_3304.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__three {
-          flex: 20%;
-          height: 50%;
-
-          background: url("../Images/IMG_4916.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__four {
-          flex: 30%;
-          height: 50%;
-          background: url("../Images/pexels-philipp-brügger-5894435.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__five {
-          flex: 20%;
-          height: 50%;
-          background: url("../Images/IMG_0254.jpg");
-          background-position: center;
-          background-size: cover;
         }
       }
     }

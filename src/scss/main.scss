@@ -170,7 +170,9 @@ body {
           // background: chocolate;
           height: 100%;
           width: 40%;
-          padding: 100px;
+          // padding: 100px;
+          padding: 105px;
+          background: rgb(146, 146, 146);
           .links__container {
             width: 100%;
             height: 100%;
@@ -220,12 +222,19 @@ body {
             // padding: 100px;
             form {
               // background: coral;
-              height: 100%;
-              width: 100%;
+              // height: 100%;
+              // width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 90px;
+              background: rgb(179, 179, 179);
+              height: 100%;
+              width: 100%;
+              // padding: 25px;
+              letter-spacing: 5px;
+              font-size: 1.2em;
+              font-weight: 300;
               fieldset {
                 padding: 20px;
                 background: gray;
@@ -238,6 +247,7 @@ body {
                 legend {
                   h1 {
                     font-weight: 400;
+                    color: whitesmoke;
                   }
                 }
                 .form__name__input {
@@ -285,8 +295,8 @@ body {
         //   rgb(38, 133, 197),
         //   rgb(95, 166, 224)
         // );
-        background: rgb(225, 228, 37);
-        height: 25%;
+        background: gold;
+        height: 20%;
         width: 100%;
         font-size: 1.2em;
         display: flex;

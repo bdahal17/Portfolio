@@ -175,7 +175,8 @@ body {
 .__container footer .footer__container .footer__quick .footer__links {
   height: 100%;
   width: 40%;
-  padding: 100px;
+  padding: 105px;
+  background: #929292;
 }
 
 .__container footer .footer__container .footer__quick .footer__links .links__container {
@@ -232,12 +233,16 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 90px;
+  background: #b3b3b3;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset {
@@ -253,6 +258,7 @@ body {
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset legend h1 {
   font-weight: 400;
+  color: whitesmoke;
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__name__input {
@@ -293,8 +299,8 @@ body {
 
 .__container footer .footer__container .footer__info {
   font-weight: 300;
-  background: #e1e425;
-  height: 25%;
+  background: gold;
+  height: 20%;
   width: 100%;
   font-size: 1.2em;
   display: flex;

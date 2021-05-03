@@ -149,14 +149,13 @@ body {
 .__container footer {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to top right, #5699cf, #2685c5, #5fa6e0);
+  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .__container footer .footer__container {
-  background: yellow;
   height: 100%;
   width: 100%;
   display: flex;
@@ -168,14 +167,12 @@ body {
 .__container footer .footer__container .footer__quick {
   height: 100%;
   width: 100%;
-  background: chartreuse;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .__container footer .footer__container .footer__quick .footer__links {
-  background: chocolate;
   height: 100%;
   width: 40%;
   padding: 100px;
@@ -219,7 +216,6 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__form {
-  background: #1ed2b4;
   height: 100%;
   width: 60%;
   display: flex;
@@ -228,13 +224,11 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container {
-  background: green;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form {
@@ -243,11 +237,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 90px;
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset {
-  background: cornflowerblue;
-  width: 50%;
+  padding: 20px;
+  background: gray;
+  width: 75%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -255,8 +251,11 @@ body {
   flex-direction: column;
 }
 
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset legend h1 {
+  font-weight: 400;
+}
+
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__name__input {
-  background: chartreuse;
   height: 100%;
   width: 100%;
   display: flex;
@@ -266,7 +265,6 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__message__input {
-  background: #9900ff;
   height: 100%;
   width: 100%;
   display: flex;
@@ -275,19 +273,27 @@ body {
   flex-direction: column;
 }
 
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__message__input .your__message {
+  width: 100%;
+}
+
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__button__input {
-  background: #ff008c;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__button__input .form__button {
+  width: 100px;
+  cursor: pointer;
 }
 
 .__container footer .footer__container .footer__info {
   font-weight: 300;
-  background: gold;
+  background: #e1e425;
   height: 25%;
   width: 100%;
   font-size: 1.2em;
@@ -305,6 +311,7 @@ body {
 }
 
 .__container footer .footer__container .footer__info .contact__logo {
+  background: #cfb73e;
   height: 100%;
   width: 100%;
   display: flex;

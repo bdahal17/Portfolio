@@ -141,17 +141,18 @@ body {
   footer {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(
-      to top right,
-      rgb(86, 153, 207),
-      rgb(38, 133, 197),
-      rgb(95, 166, 224)
-    );
+    background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+    // background: linear-gradient(
+    //   to top right,
+    //   rgb(86, 153, 207),
+    //   rgb(38, 133, 197),
+    //   rgb(95, 166, 224)
+    // );
     display: flex;
     justify-content: center;
     align-items: center;
     .footer__container {
-      background: yellow;
+      // background: yellow;
       height: 100%;
       width: 100%;
       display: flex;
@@ -161,12 +162,12 @@ body {
       .footer__quick {
         height: 100%;
         width: 100%;
-        background: chartreuse;
+        // background: chartreuse;
         display: flex;
         justify-content: center;
         align-items: center;
         .footer__links {
-          background: chocolate;
+          // background: chocolate;
           height: 100%;
           width: 40%;
           padding: 100px;
@@ -204,20 +205,19 @@ body {
           }
         }
         .footer__form {
-          background: rgb(30, 210, 180);
           height: 100%;
           width: 60%;
           display: flex;
           justify-content: center;
           align-items: center;
           .form__container {
-            background: green;
+            // background: green;
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 100px;
+            // padding: 100px;
             form {
               // background: coral;
               height: 100%;
@@ -225,16 +225,22 @@ body {
               display: flex;
               justify-content: center;
               align-items: center;
+              padding: 90px;
               fieldset {
-                background: cornflowerblue;
-                width: 50%;
+                padding: 20px;
+                background: gray;
+                width: 75%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                legend {
+                  h1 {
+                    font-weight: 400;
+                  }
+                }
                 .form__name__input {
-                  background: chartreuse;
                   height: 100%;
                   width: 100%;
                   display: flex;
@@ -243,22 +249,28 @@ body {
                   flex-direction: column;
                 }
                 .form__message__input {
-                  background: rgb(153, 0, 255);
                   height: 100%;
                   width: 100%;
                   display: flex;
                   justify-content: center;
                   align-items: flex-start;
                   flex-direction: column;
+                  .your__message {
+                    width: 100%;
+                  }
                 }
                 .form__button__input {
-                  background: rgb(255, 0, 140);
                   height: 100%;
                   width: 100%;
                   display: flex;
                   justify-content: center;
                   align-items: flex-start;
                   flex-direction: column;
+
+                  .form__button {
+                    width: 100px;
+                    cursor: pointer;
+                  }
                 }
               }
             }
@@ -273,7 +285,7 @@ body {
         //   rgb(38, 133, 197),
         //   rgb(95, 166, 224)
         // );
-        background: gold;
+        background: rgb(225, 228, 37);
         height: 25%;
         width: 100%;
         font-size: 1.2em;
@@ -288,6 +300,7 @@ body {
           align-items: center;
         }
         .contact__logo {
+          background: rgb(207, 183, 62);
           height: 100%;
           width: 100%;
           display: flex;

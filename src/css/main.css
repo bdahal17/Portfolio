@@ -175,6 +175,7 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__links {
+  background: chocolate;
   height: 100%;
   width: 40%;
   padding: 100px;
@@ -190,6 +191,7 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__links .links__container .links__header {
+  background: #c7c7c7;
   height: 20%;
   width: 100%;
   display: flex;
@@ -202,6 +204,7 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__links .links__container .links__main {
+  background: gray;
   height: 80%;
   width: 100%;
   padding: 25px;
@@ -219,6 +222,67 @@ body {
   background: #1ed2b4;
   height: 100%;
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container {
+  background: green;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset {
+  background: cornflowerblue;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__name__input {
+  background: chartreuse;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__message__input {
+  background: #9900ff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__button__input {
+  background: #ff008c;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .__container footer .footer__container .footer__info {

@@ -166,6 +166,7 @@ body {
         justify-content: center;
         align-items: center;
         .footer__links {
+          background: chocolate;
           height: 100%;
           width: 40%;
           padding: 100px;
@@ -177,6 +178,7 @@ body {
             align-items: center;
             flex-direction: column;
             .links__header {
+              background: rgb(199, 199, 199);
               height: 20%;
               width: 100%;
               display: flex;
@@ -187,6 +189,7 @@ body {
               }
             }
             .links__main {
+              background: gray;
               height: 80%;
               width: 100%;
               padding: 25px;
@@ -204,6 +207,62 @@ body {
           background: rgb(30, 210, 180);
           height: 100%;
           width: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .form__container {
+            background: green;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            form {
+              // background: coral;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              fieldset {
+                background: cornflowerblue;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .form__name__input {
+                  background: chartreuse;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+                }
+                .form__message__input {
+                  background: rgb(153, 0, 255);
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+                }
+                .form__button__input {
+                  background: rgb(255, 0, 140);
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
         }
       }
       .footer__info {

@@ -10,16 +10,20 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: brown;
 }
 .__container {
-  background: cadetblue;
+  // background: url("../Images/alice-mourou-nliiE9lkYec-unsplash.jpg");
+  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
+
   header {
     height: 100vh;
     width: 100%;
@@ -44,6 +48,7 @@ body {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      z-index: 1;
       background: linear-gradient(
         to top right,
         rgb(86, 153, 207),
@@ -72,7 +77,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+      // background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
       .__skills {
         height: 100%;
         width: 65%;
@@ -118,6 +123,8 @@ body {
             justify-content: center;
             align-items: flex-start;
             button {
+              background-color: gold;
+              border: none;
               width: 100px;
             }
           }
@@ -134,14 +141,65 @@ body {
     }
   }
   main {
-    height: 100vh;
+    height: 300vh;
     width: 100%;
-    background: rgb(195, 0, 255);
+    background: black;
+    background-position-y: 300px;
+    animation: main 1s linear;
+    .main__container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .main__header {
+        color: gold;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        letter-spacing: 20px;
+        text-shadow: 10px 10px 10px rgb(173, 173, 173);
+      }
+      .main__main {
+        // background: rgb(0, 60, 255);
+        height: 90%;
+        width: 100%;
+        // background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .project__one {
+          background: brown;
+          height: 100%;
+          width: 100%;
+        }
+        .project__two {
+          background: rgb(156, 116, 116);
+          height: 100%;
+          width: 100%;
+        }
+        .project__three {
+          background: rgb(101, 165, 42);
+          height: 100%;
+          width: 100%;
+        }
+        .project__four {
+          background: rgb(42, 120, 165);
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
   footer {
     height: 100vh;
     width: 100%;
-    background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+    // background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
     // background: linear-gradient(
     //   to top right,
     //   rgb(86, 153, 207),
@@ -172,7 +230,12 @@ body {
           width: 40%;
           // padding: 100px;
           padding: 105px;
-          background: rgb(146, 146, 146);
+          background: linear-gradient(
+            to bottom,
+            rgb(149, 172, 199),
+            rgb(137, 141, 148),
+            gray
+          );
           .links__container {
             width: 100%;
             height: 100%;
@@ -228,7 +291,12 @@ body {
               justify-content: center;
               align-items: center;
               padding: 90px;
-              background: rgb(179, 179, 179);
+              background: linear-gradient(
+                to bottom,
+                rgb(117, 154, 199),
+                rgb(137, 141, 148),
+                gray
+              );
               height: 100%;
               width: 100%;
               // padding: 25px;
@@ -327,5 +395,13 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes main {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

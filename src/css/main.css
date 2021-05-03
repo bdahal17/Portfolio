@@ -11,17 +11,19 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: brown;
 }
 
 .__container {
-  background: cadetblue;
+  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 .__container header {
@@ -43,6 +45,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 1;
   background: linear-gradient(to top right, #5699cf, #2685c5, #5fa6e0);
 }
 
@@ -69,7 +72,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
 }
 
 .__container header .header__main .__skills {
@@ -127,6 +129,8 @@ body {
 }
 
 .__container header .header__main .__profile .__card .__button button {
+  background-color: gold;
+  border: none;
   width: 100px;
 }
 
@@ -141,15 +145,70 @@ body {
 }
 
 .__container main {
-  height: 100vh;
+  height: 300vh;
   width: 100%;
-  background: #c300ff;
+  background: black;
+  background-position-y: 300px;
+  animation: main 1s linear;
+}
+
+.__container main .main__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .main__header {
+  color: gold;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  letter-spacing: 20px;
+  text-shadow: 10px 10px 10px #adadad;
+}
+
+.__container main .main__container .main__main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .main__main .project__one {
+  background: brown;
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .main__main .project__two {
+  background: #9c7474;
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .main__main .project__three {
+  background: #65a52a;
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .main__main .project__four {
+  background: #2a78a5;
+  height: 100%;
+  width: 100%;
 }
 
 .__container footer {
   height: 100vh;
   width: 100%;
-  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +235,7 @@ body {
   height: 100%;
   width: 40%;
   padding: 105px;
-  background: #929292;
+  background: linear-gradient(to bottom, #95acc7, #898d94, gray);
 }
 
 .__container footer .footer__container .footer__quick .footer__links .links__container {
@@ -237,7 +296,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 90px;
-  background: #b3b3b3;
+  background: linear-gradient(to bottom, #759ac7, #898d94, gray);
   height: 100%;
   width: 100%;
   letter-spacing: 5px;
@@ -331,6 +390,15 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes main {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

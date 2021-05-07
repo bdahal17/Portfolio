@@ -183,7 +183,25 @@ body {
 }
 
 .__container main .main__container .main__main .project__one {
-  background: brown;
+  background: #dddddd;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .main__main .project__one .one__container {
+  background: url("/src/Images/bananaMaker.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .main__main .project__one .one__info {
+  background: #e4e4e4;
   height: 100%;
   width: 100%;
 }
@@ -204,6 +222,16 @@ body {
   background: #2a78a5;
   height: 100%;
   width: 100%;
+}
+
+.__container main .main__container .main__main .__projects {
+  background: #dddddd;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .__container footer {

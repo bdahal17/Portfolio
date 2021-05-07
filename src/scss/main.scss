@@ -174,9 +174,25 @@ body {
         align-items: center;
         flex-direction: column;
         .project__one {
-          background: brown;
+          background: rgb(221, 221, 221);
           height: 100%;
           width: 100%;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .one__container {
+            background: url("/src/Images/bananaMaker.png");
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+          }
+          .one__info {
+            background: rgb(228, 228, 228);
+            height: 100%;
+            width: 100%;
+          }
         }
         .project__two {
           background: rgb(156, 116, 116);
@@ -192,6 +208,15 @@ body {
           background: rgb(42, 120, 165);
           height: 100%;
           width: 100%;
+        }
+        .__projects {
+          background: rgb(221, 221, 221);
+          height: 100%;
+          width: 100%;
+          padding: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

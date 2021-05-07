@@ -13,7 +13,7 @@ body {
 }
 .__container {
   // background: url("../Images/alice-mourou-nliiE9lkYec-unsplash.jpg");
-  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
   background-position: center;
   background-size: cover;
   height: auto;
@@ -43,7 +43,7 @@ body {
     nav {
       position: fixed;
       top: 0;
-      height: 10%;
+      height: 8%;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
@@ -79,8 +79,16 @@ body {
       align-items: center;
       // background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
       .__skills {
+        color: black;
         height: 100%;
         width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        h1 {
+          font-size: 3em;
+        }
       }
       .__profile {
         height: 100%;
@@ -143,7 +151,7 @@ body {
   main {
     height: 300vh;
     width: 100%;
-    background: black;
+    background: rgb(228, 228, 228);
     background-position-y: 300px;
     animation: main 1s linear;
     .main__container {
@@ -243,6 +251,7 @@ body {
       flex-direction: column;
       align-items: center;
       .footer__quick {
+        display: none;
         height: 100%;
         width: 100%;
         // background: chartreuse;
@@ -250,17 +259,18 @@ body {
         justify-content: center;
         align-items: center;
         .footer__links {
+          display: none;
           // background: chocolate;
           height: 100%;
           width: 40%;
           // padding: 100px;
           padding: 105px;
-          background: linear-gradient(
-            to bottom,
-            rgb(149, 172, 199),
-            rgb(137, 141, 148),
-            gray
-          );
+          // background: linear-gradient(
+          //   to bottom,
+          //   rgb(149, 172, 199),
+          //   rgb(137, 141, 148),
+          //   gray
+          // );
           .links__container {
             width: 100%;
             height: 100%;
@@ -316,12 +326,12 @@ body {
               justify-content: center;
               align-items: center;
               padding: 90px;
-              background: linear-gradient(
-                to bottom,
-                rgb(117, 154, 199),
-                rgb(137, 141, 148),
-                gray
-              );
+              // background: linear-gradient(
+              //   to bottom,
+              //   rgb(117, 154, 199),
+              //   rgb(137, 141, 148),
+              //   gray
+              // );
               height: 100%;
               width: 100%;
               // padding: 25px;
@@ -389,7 +399,7 @@ body {
         //   rgb(95, 166, 224)
         // );
         background: gold;
-        height: 20%;
+        height: 10%;
         width: 100%;
         font-size: 1.2em;
         display: flex;

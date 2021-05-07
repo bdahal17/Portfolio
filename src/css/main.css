@@ -14,7 +14,7 @@ body {
 }
 
 .__container {
-  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
   background-position: center;
   background-size: cover;
   height: auto;
@@ -40,7 +40,7 @@ body {
 .__container header nav {
   position: fixed;
   top: 0;
-  height: 10%;
+  height: 8%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -75,8 +75,17 @@ body {
 }
 
 .__container header .header__main .__skills {
+  color: black;
   height: 100%;
   width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.__container header .header__main .__skills h1 {
+  font-size: 3em;
 }
 
 .__container header .header__main .__profile {
@@ -147,7 +156,7 @@ body {
 .__container main {
   height: 300vh;
   width: 100%;
-  background: black;
+  background: #e4e4e4;
   background-position-y: 300px;
   animation: main 1s linear;
 }
@@ -252,6 +261,7 @@ body {
 }
 
 .__container footer .footer__container .footer__quick {
+  display: none;
   height: 100%;
   width: 100%;
   display: flex;
@@ -260,10 +270,10 @@ body {
 }
 
 .__container footer .footer__container .footer__quick .footer__links {
+  display: none;
   height: 100%;
   width: 40%;
   padding: 105px;
-  background: linear-gradient(to bottom, #95acc7, #898d94, gray);
 }
 
 .__container footer .footer__container .footer__quick .footer__links .links__container {
@@ -324,7 +334,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 90px;
-  background: linear-gradient(to bottom, #759ac7, #898d94, gray);
   height: 100%;
   width: 100%;
   letter-spacing: 5px;
@@ -387,7 +396,7 @@ body {
 .__container footer .footer__container .footer__info {
   font-weight: 300;
   background: gold;
-  height: 20%;
+  height: 10%;
   width: 100%;
   font-size: 1.2em;
   display: flex;

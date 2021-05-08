@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -12,17 +11,19 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: brown;
 }
 
 .__container {
-  background: cadetblue;
+  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 .__container header {
@@ -39,13 +40,13 @@ body {
 .__container header nav {
   position: fixed;
   top: 0;
-  z-index: 1;
-  height: 10%;
+  height: 8%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to top right, #5699cf, #2685c5, #5fa6e0);
+  z-index: 1;
+  background: linear-gradient(to bottom, #5699cf, #2685c5, #5699cf);
 }
 
 .__container header nav .__nav {
@@ -59,94 +60,417 @@ body {
   transition: 1s;
 }
 
-.__container header nav .__nav:hover {
-  background: #e0d424;
+.__container header nav .tabs {
+  transition: 0.1s;
+}
+
+.__container header nav .tabs:hover {
+  font-size: 1.2em;
 }
 
 .__container header .header__main {
   height: 100%;
   width: 100%;
-  background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.__container header .header__main .__skills {
+  color: black;
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background: rgba(108, 150, 184, 0.3);
+}
+
+.__container header .header__main .__skills h1 {
+  font-size: 3em;
+}
+
+.__container header .header__main .__profile {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background: rgba(108, 150, 184, 0.3);
+}
+
+.__container header .header__main .__profile .__card {
+  background: azure;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container header .header__main .__profile .__card .photo__div {
+  background: url("../Images/Bishnu-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  height: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.__container header .header__main .__profile .__card .dev__div {
+  height: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.__container header .header__main .__profile .__card .dev__div h4 {
+  font-weight: 400;
+}
+
+.__container header .header__main .__profile .__card .__button {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__main .__profile .__card .__button button {
+  background-color: gold;
+  border: none;
+  width: 100px;
+}
+
+.__container header .header__main .__profile .__image {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.__container header .header__main .__profile .__image:hover {
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+.__container main {
+  height: auto;
+  width: 100%;
+  background: #cac7c7;
+  background-position-y: 300px;
+  animation: main 1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container {
+  height: 500vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .__projects {
+  height: 400vh;
+  width: 100%;
+}
+
+.__container main .main__container .about__me {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom left, #347fbd, #83b4c4, #2c7e97);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px;
 }
 
-.__container header .header__main .__collection {
-  height: 75%;
-  width: 75%;
+.__container main .main__container .about__me .about__me__one {
+  background: linear-gradient(to bottom left, #c9c7c7, #9fb2bb, #bdbdbd);
+  height: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  overflow: hidden;
-  animation: zoom 1s linear;
+  flex-direction: column;
+  padding: 25px;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
-.__container header .header__main .__collection .__image {
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.__container header .header__main .__collection .__image:hover {
-  transform: scale(1.01);
-  opacity: 1;
-}
-
-.__container header .header__main .__collection .image__one {
-  flex: 12%;
-  height: 50%;
-  background: url("../Images/Bishnu-resized.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.__container header .header__main .__collection .image__two {
-  flex: 40%;
-  height: 50%;
-  background: url("../Images/IMG_3304.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.__container header .header__main .__collection .image__three {
-  flex: 20%;
-  height: 50%;
-  background: url("../Images/IMG_4916.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.__container header .header__main .__collection .image__four {
-  flex: 30%;
-  height: 50%;
-  background: url("../Images/pexels-philipp-brügger-5894435.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.__container header .header__main .__collection .image__five {
-  flex: 20%;
-  height: 50%;
-  background: url("../Images/IMG_0254.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.__container main {
-  height: 100vh;
+.__container main .main__container .about__me .about__me__one .about__me__header {
   width: 100%;
-  background: #00a2ff;
+  height: 30%;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  margin-left: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.__container main .main__container .about__me .about__me__one .about__me__profile {
+  background-color: #dddddd;
+  height: 100%;
+  width: 100%;
+  padding: 1.2em;
+}
+
+.__container main .main__container .about__me .about__me__two {
+  height: 100%;
+  width: 40%;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main .skills {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 1.1em;
+  box-shadow: 5px 3px 1px #bdbdbd;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main .skills:hover {
+  transform: scale(1.2);
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #oop {
+  background: url("../Images/agile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #java {
+  background: url("../Images/java.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #javascript {
+  background: url("../Images/javascript.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #css {
+  background: url("../Images/css.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #html {
+  background: url("../Images/html.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #spring__boot {
+  background: url("../Images/spring-boot-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #mvc {
+  background: url("../Images/mvc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #tdd {
+  background: url("../Images/tdd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #sql {
+  background: url("../Images/sql.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #restful__api {
+  background: url("../Images/ea4b66f96009bcbb8dcaeb2607f98199356d9fb4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #communication {
+  background: url("../Images/communication.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #time__management {
+  background: url("../Images/time.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .__container footer {
   height: 100vh;
   width: 100%;
-  background: #d400ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick {
+  display: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick .footer__form {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset {
+  padding: 20px;
+  background: #acacac;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset legend h1 {
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__name__input {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__message__input {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__message__input .your__message {
+  width: 100%;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__button__input {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container footer .footer__container .footer__quick .footer__form .form__container form fieldset .form__button__input .form__button {
+  width: 100px;
+  cursor: pointer;
+}
+
+.__container footer .footer__container .footer__info {
+  font-weight: 300;
+  background: gold;
+  height: 10%;
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__info p {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container footer .footer__container .footer__info .contact__logo {
+  background: #cfb73e;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @keyframes zoom {
@@ -155,6 +479,15 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes main {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

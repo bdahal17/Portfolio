@@ -13,46 +13,132 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="__container">
+    <div id="home" class="__container">
       <header>
-        <!-- <div class="__intro">
-          <h1>Welcome! I'm Bishnu And This Is My Portfolio</h1>
-        </div> -->
         <nav>
-          <div class="__nav __home"><a href="#index.html">Home</a></div>
-          <div class="__nav about__me">
-            <a href="#aboutMe.html">About Me</a>
+          <div class="__nav __home">
+            <a href="#home"><span class="tabs __home">&#127968;</span></a>
           </div>
-          <div class="__nav"><a href="#aboutMe.html">Test</a></div>
+          <div class="__nav about__me">
+            <a href="#about"><span class="tabs __profile">&#x1F935;</span></a>
+          </div>
+          <div class="__nav">
+            <a href="#contact"><span class="tabs __contact">&#x1F4E7;</span></a>
+          </div>
+          <div class="__nav">
+            <a href="#projects"
+              ><span class="tabs __projects">&#x1F680;</span></a
+            >
+          </div>
+
+          <div class="__nav">
+            <a href="#aboutMe.html"
+              ><span class="tabs __resume">&#128195;</span></a
+            >
+          </div>
         </nav>
-        <!-- <div class="__intro">
-          <h3>Welcome! I'm Bishnu And This Is My Portfolio</h3>
-        </div> -->
 
         <section class="header__main">
-          <div class="__collection">
-            <div class="image__one __image"></div>
-            <div class="image__two __image"></div>
-            <div class="image__three __image"></div>
-            <div class="image__four __image"></div>
-            <div class="image__five __image"></div>
+          <div class="__skills">
+            <h1>
+              Welcome! I'm Bishnu And This Is My Portfolio.
+              <span> Please scroll to navigate</span>
+            </h1>
+          </div>
+          <div class="__profile">
+            <div class="__card">
+              <div class="photo__div"></div>
+              <div class="dev__div">
+                <h1>Bishnu Dahal</h1>
+                <h4>Java Software Engineer</h4>
+              </div>
+              <div class="__button">
+                <button>Contact</button>
+              </div>
+            </div>
           </div>
         </section>
       </header>
       <main>
         <section class="main__container">
-          <div class="main__header">
-            <h1>Projects</h1>
-          </div>
-          <div class="main__main">
-            <div class="project__one"></div>
-            <div class="project__two"></div>
-            <div class="project__three"></div>
-            <div class="project__four"></div>
+          <div id="projects" class="__projects"></div>
+          <div id="about" class="about__me">
+            <div class="about__me__one">
+              <div class="about__me__header">
+                <h1>Bishnu Dahal</h1>
+                <p>Software Engineer</p>
+              </div>
+              <div class="about__me__profile">
+                <h3>
+                  Ambitious Java Developer versed in following established
+                  procedures. Offering technical expertise in programming
+                  analysis, application analysis, and design. Excellent team
+                  player with in-depth knowledge of development tools and
+                  languages.
+                </h3>
+              </div>
+            </div>
+            <div class="about__me__two">
+              <div class="about__me__two__main">
+                <div class="skills" id="oop"></div>
+                <div class="skills" id="java"></div>
+                <div class="skills" id="javascript"></div>
+                <div class="skills" id="css"></div>
+                <div class="skills" id="html"></div>
+                <div class="skills" id="spring__boot"></div>
+                <div class="skills" id="mvc"></div>
+                <div class="skills" id="tdd"></div>
+                <div class="skills" id="sql"></div>
+                <div class="skills" id="restful__api"></div>
+                <div class="skills" id="communication"></div>
+                <div class="skills" id="time__management"></div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div id="contact" class="footer__container">
+          <section class="footer__quick">
+            <div class="footer__form">
+              <div class="form__container">
+                <form>
+                  <fieldset>
+                    <legend><h1>Contact Me</h1></legend>
+                    <div class="form__name__input">
+                      <label for="name">Full Name</label>
+                      <input
+                        type="text"
+                        class="full__name"
+                        placeholder="enter your name"
+                      />
+                    </div>
+                    <div class="form__message__input">
+                      <label for="name">Message</label>
+                      <textarea
+                        placeholder="enter your message"
+                        class="your__message"
+                      ></textarea>
+                    </div>
+                    <div class="form__button__input">
+                      <button class="form__button">Send</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="footer__info">
+            <p>&copy2021</p>
+            <p>Designed by: Bishnu Dahal</p>
+            <div class="contact__logo">
+              <div>LinkedIn</div>
+              <div>GitHub</div>
+              <div>email</div>
+            </div>
+          </section>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -10,25 +10,22 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: brown;
 }
 .__container {
-  background: cadetblue;
+  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
+
   header {
     height: 100vh;
     width: 100%;
-    // background: linear-gradient(
-    //   to bottom right,
-    //   rgb(54, 91, 158),
-    //   rgb(189, 189, 189),
-    //   rgb(81, 90, 131)
-    // );
     background-size: cover;
     background-position: center;
     display: flex;
@@ -39,17 +36,17 @@ body {
     nav {
       position: fixed;
       top: 0;
-      z-index: 1;
-      height: 10%;
+      height: 8%;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      z-index: 1;
       background: linear-gradient(
-        to top right,
+        to bottom,
         rgb(86, 153, 207),
         rgb(38, 133, 197),
-        rgb(95, 166, 224)
+        rgb(86, 153, 207)
       );
       .__nav {
         height: 100%;
@@ -60,46 +57,87 @@ body {
         cursor: pointer;
         font-size: 2em;
         transition: 1s;
+      }
+      .tabs {
+        transition: 0.1s;
         &:hover {
-          background: rgb(224, 212, 36);
+          font-size: 1.2em;
         }
       }
     }
-    // .__intro {
-    //   //   background: rgb(39, 80, 126);
-    //   z-index: 1;
-    //   border-radius: 5px;
-    //   color: whitesmoke;
-    //   margin: 5%;
-    //   width: 75%;
-    //   text-align: center;
-    //   h3 {
-    //     font-weight: 300;
-    //     font-size: 2em;
-    //     letter-spacing: 1px;
-    //     color: rgb(0, 89, 255);
-    //   }
-    // }
     .header__main {
       height: 100%;
       width: 100%;
-      background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 100px;
-      .__collection {
-        height: 75%;
-        width: 75%;
+
+      padding: 25px;
+      .__skills {
+        color: black;
+        height: 100%;
+        width: 65%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        border-radius: 10px;
-        overflow: hidden;
-        animation: zoom 1s linear;
+        padding: 100px;
+        background: rgba(108, 150, 184, 0.3);
+
+        h1 {
+          font-size: 3em;
+        }
+      }
+      .__profile {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        background: rgba(108, 150, 184, 0.3);
+        .__card {
+          background: azure;
+          // margin-top: 55px;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .photo__div {
+            background: url("../Images/Bishnu-resized.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 75%;
+            height: 50%;
+            border-radius: 50%;
+            margin-top: 10px;
+          }
+          .dev__div {
+            height: 35%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+
+            h4 {
+              font-weight: 400;
+            }
+          }
+          .__button {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              background-color: gold;
+              border: none;
+              width: 100px;
+            }
+          }
+        }
         .__image {
           cursor: pointer;
           transition: 0.5s;
@@ -108,54 +146,308 @@ body {
             opacity: 1;
           }
         }
-        .image__one {
-          flex: 12%;
-          height: 50%;
-          background: url("../Images/Bishnu-resized.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__two {
-          flex: 40%;
-          height: 50%;
-          background: url("../Images/IMG_3304.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__three {
-          flex: 20%;
-          height: 50%;
-
-          background: url("../Images/IMG_4916.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__four {
-          flex: 30%;
-          height: 50%;
-          background: url("../Images/pexels-philipp-brügger-5894435.jpg");
-          background-position: center;
-          background-size: cover;
-        }
-        .image__five {
-          flex: 20%;
-          height: 50%;
-          background: url("../Images/IMG_0254.jpg");
-          background-position: center;
-          background-size: cover;
-        }
       }
     }
   }
   main {
-    height: 100vh;
+    height: auto;
     width: 100%;
-    background: rgb(0, 162, 255);
+    background: rgb(202, 199, 199);
+    background-position-y: 300px;
+    animation: main 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__container {
+      height: 500vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .__projects {
+        height: 400vh;
+        width: 100%;
+      }
+      .about__me {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(
+          to bottom left,
+          rgb(52, 127, 189),
+          rgb(131, 180, 196),
+          rgb(44, 126, 151)
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        .about__me__one {
+          background: linear-gradient(
+            to bottom left,
+            rgb(201, 199, 199),
+            rgb(159, 178, 187),
+            rgb(189, 189, 189)
+          );
+          height: 100%;
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 25px;
+          box-shadow: 5px 5px 5px rgb(211, 211, 211);
+          .about__me__header {
+            width: 100%;
+            height: 30%;
+            letter-spacing: 5px;
+            font-size: 1.5em;
+            margin-left: 1.2em;
+            margin-bottom: 1.2em;
+          }
+          .about__me__profile {
+            background-color: rgb(221, 221, 221);
+            height: 100%;
+            width: 100%;
+            padding: 1.2em;
+          }
+        }
+        .about__me__two {
+          height: 100%;
+          width: 40%;
+          padding: 1.2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .about__me__two__main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .skills {
+              border-radius: 50%;
+              width: 50px;
+              height: 50px;
+              margin: 1.1em;
+              box-shadow: 5px 3px 1px rgb(189, 189, 189);
+              transition: 1s;
+              cursor: pointer;
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+            #oop {
+              background: url("../Images/agile.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #java {
+              background: url("../Images/java.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #javascript {
+              background: url("../Images/javascript.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #css {
+              background: url("../Images/css.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #html {
+              background: url("../Images/html.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #spring__boot {
+              background: url("../Images/spring-boot-logo.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #mvc {
+              background: url("../Images/mvc.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #tdd {
+              background: url("../Images/tdd.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #sql {
+              background: url("../Images/sql.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #restful__api {
+              background: url("../Images/ea4b66f96009bcbb8dcaeb2607f98199356d9fb4.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #communication {
+              background: url("../Images/communication.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #time__management {
+              background: url("../Images/time.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
   }
   footer {
     height: 100vh;
     width: 100%;
-    background: rgb(212, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__container {
+      // background: yellow;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .footer__quick {
+        display: none;
+        height: 100%;
+        width: 100%;
+        // background: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer__form {
+          height: 100%;
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .form__container {
+            // background: green;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding: 100px;
+            form {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 90px;
+              height: 100%;
+              width: 100%;
+              letter-spacing: 5px;
+              font-size: 1.2em;
+              font-weight: 300;
+              fieldset {
+                padding: 20px;
+                background: rgb(172, 172, 172);
+                width: 75%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                legend {
+                  h1 {
+                    font-weight: 400;
+                    color: whitesmoke;
+                  }
+                }
+                .form__name__input {
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+                }
+                .form__message__input {
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+                  .your__message {
+                    width: 100%;
+                  }
+                }
+                .form__button__input {
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  flex-direction: column;
+
+                  .form__button {
+                    width: 100px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer__info {
+        font-weight: 300;
+        // background: linear-gradient(
+        //   to top right,
+        //   rgb(86, 153, 207),
+        //   rgb(38, 133, 197),
+        //   rgb(95, 166, 224)
+        // );
+        background: gold;
+        height: 10%;
+        width: 100%;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        p {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact__logo {
+          background: rgb(207, 183, 62);
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+      }
+    }
   }
 }
 @keyframes zoom {
@@ -164,5 +456,13 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes main {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

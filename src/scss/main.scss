@@ -12,7 +12,6 @@ body {
   width: 100%;
 }
 .__container {
-  // background: url("../Images/alice-mourou-nliiE9lkYec-unsplash.jpg");
   background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
   background-position: center;
   background-size: cover;
@@ -153,7 +152,7 @@ body {
   main {
     height: auto;
     width: 100%;
-    background: rgb(206, 42, 42);
+    background: rgb(202, 199, 199);
     background-position-y: 300px;
     animation: main 1s linear;
     display: flex;
@@ -170,7 +169,6 @@ body {
       .__projects {
         height: 400vh;
         width: 100%;
-        background-color: salmon;
       }
       .about__me {
         height: 100vh;
@@ -186,7 +184,12 @@ body {
         align-items: center;
         padding: 100px;
         .about__me__one {
-          background-color: rgb(177, 177, 177);
+          background: linear-gradient(
+            to bottom left,
+            rgb(201, 199, 199),
+            rgb(159, 178, 187),
+            rgb(189, 189, 189)
+          );
           height: 100%;
           width: 60%;
           display: flex;
@@ -194,6 +197,7 @@ body {
           align-items: center;
           flex-direction: column;
           padding: 25px;
+          box-shadow: 5px 5px 5px rgb(211, 211, 211);
           .about__me__header {
             width: 100%;
             height: 30%;
@@ -230,7 +234,7 @@ body {
               width: 50px;
               height: 50px;
               margin: 1.1em;
-              box-shadow: 5px 5px 10px rgb(48, 47, 47);
+              box-shadow: 5px 3px 1px rgb(189, 189, 189);
               transition: 1s;
               cursor: pointer;
               &:hover {
@@ -336,52 +340,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        .footer__links {
-          display: none;
-          // background: chocolate;
-          height: 100%;
-          width: 40%;
-          // padding: 100px;
-          padding: 105px;
-          // background: linear-gradient(
-          //   to bottom,
-          //   rgb(149, 172, 199),
-          //   rgb(137, 141, 148),
-          //   gray
-          // );
-          .links__container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .links__header {
-              background: rgb(199, 199, 199);
-              height: 20%;
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              h1 {
-                font-weight: 400;
-              }
-            }
-            .links__main {
-              background: gray;
-              height: 80%;
-              width: 100%;
-              padding: 25px;
-              letter-spacing: 5px;
-              font-size: 1.2em;
-              font-weight: 300;
-              ul {
-                height: 100%;
-                width: 100%;
-              }
-            }
-          }
-        }
         .footer__form {
           height: 100%;
           width: 60%;
@@ -397,28 +355,18 @@ body {
             align-items: center;
             // padding: 100px;
             form {
-              // background: coral;
-              // height: 100%;
-              // width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 90px;
-              // background: linear-gradient(
-              //   to bottom,
-              //   rgb(117, 154, 199),
-              //   rgb(137, 141, 148),
-              //   gray
-              // );
               height: 100%;
               width: 100%;
-              // padding: 25px;
               letter-spacing: 5px;
               font-size: 1.2em;
               font-weight: 300;
               fieldset {
                 padding: 20px;
-                background: gray;
+                background: rgb(172, 172, 172);
                 width: 75%;
                 height: 100%;
                 display: flex;

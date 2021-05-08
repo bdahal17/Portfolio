@@ -162,7 +162,7 @@ body {
 .__container main {
   height: auto;
   width: 100%;
-  background: #ce2a2a;
+  background: #cac7c7;
   background-position-y: 300px;
   animation: main 1s linear;
   display: flex;
@@ -182,7 +182,6 @@ body {
 .__container main .main__container .__projects {
   height: 400vh;
   width: 100%;
-  background-color: salmon;
 }
 
 .__container main .main__container .about__me {
@@ -196,7 +195,7 @@ body {
 }
 
 .__container main .main__container .about__me .about__me__one {
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom left, #c9c7c7, #9fb2bb, #bdbdbd);
   height: 100%;
   width: 60%;
   display: flex;
@@ -204,6 +203,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
 .__container main .main__container .about__me .about__me__one .about__me__header {
@@ -246,7 +246,7 @@ body {
   width: 50px;
   height: 50px;
   margin: 1.1em;
-  box-shadow: 5px 5px 10px #302f2f;
+  box-shadow: 5px 3px 1px #bdbdbd;
   transition: 1s;
   cursor: pointer;
 }
@@ -365,50 +365,6 @@ body {
   align-items: center;
 }
 
-.__container footer .footer__container .footer__quick .footer__links {
-  display: none;
-  height: 100%;
-  width: 40%;
-  padding: 105px;
-}
-
-.__container footer .footer__container .footer__quick .footer__links .links__container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.__container footer .footer__container .footer__quick .footer__links .links__container .links__header {
-  background: #c7c7c7;
-  height: 20%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container footer .footer__container .footer__quick .footer__links .links__container .links__header h1 {
-  font-weight: 400;
-}
-
-.__container footer .footer__container .footer__quick .footer__links .links__container .links__main {
-  background: gray;
-  height: 80%;
-  width: 100%;
-  padding: 25px;
-  letter-spacing: 5px;
-  font-size: 1.2em;
-  font-weight: 300;
-}
-
-.__container footer .footer__container .footer__quick .footer__links .links__container .links__main ul {
-  height: 100%;
-  width: 100%;
-}
-
 .__container footer .footer__container .footer__quick .footer__form {
   height: 100%;
   width: 60%;
@@ -439,7 +395,7 @@ body {
 
 .__container footer .footer__container .footer__quick .footer__form .form__container form fieldset {
   padding: 20px;
-  background: gray;
+  background: #acacac;
   width: 75%;
   height: 100%;
   display: flex;

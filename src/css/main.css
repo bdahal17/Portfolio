@@ -60,8 +60,12 @@ body {
   transition: 1s;
 }
 
-.__container header nav .__nav:hover {
-  background: #e0d424;
+.__container header nav .tabs {
+  transition: 0.1s;
+}
+
+.__container header nav .tabs:hover {
+  font-size: 1.2em;
 }
 
 .__container header .header__main {
@@ -184,7 +188,7 @@ body {
 .__container main .main__container .about__me {
   height: 100vh;
   width: 100%;
-  background-color: #72d3fa;
+  background: linear-gradient(to bottom left, #347fbd, #83b4c4, #2c7e97);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +196,7 @@ body {
 }
 
 .__container main .main__container .about__me .about__me__one {
-  background-color: sandybrown;
+  background-color: #b1b1b1;
   height: 100%;
   width: 60%;
   display: flex;
@@ -212,14 +216,13 @@ body {
 }
 
 .__container main .main__container .about__me .about__me__one .about__me__profile {
-  background-color: sienna;
+  background-color: #dddddd;
   height: 100%;
   width: 100%;
   padding: 1.2em;
 }
 
 .__container main .main__container .about__me .about__me__two {
-  background-color: #60eff4;
   height: 100%;
   width: 40%;
   padding: 1.2em;
@@ -229,7 +232,6 @@ body {
 }
 
 .__container main .main__container .about__me .about__me__two .about__me__two__main {
-  background-color: slateblue;
   height: 100%;
   width: 100%;
   display: flex;
@@ -244,10 +246,97 @@ body {
   width: 50px;
   height: 50px;
   margin: 1.1em;
+  box-shadow: 5px 5px 10px #302f2f;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main .skills:hover {
+  transform: scale(1.2);
 }
 
 .__container main .main__container .about__me .about__me__two .about__me__two__main #oop {
-  background-image: url("../Images/");
+  background: url("../Images/agile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #java {
+  background: url("../Images/java.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #javascript {
+  background: url("../Images/javascript.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #css {
+  background: url("../Images/css.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #html {
+  background: url("../Images/html.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #spring__boot {
+  background: url("../Images/spring-boot-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #mvc {
+  background: url("../Images/mvc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #tdd {
+  background: url("../Images/tdd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #sql {
+  background: url("../Images/sql.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #restful__api {
+  background: url("../Images/ea4b66f96009bcbb8dcaeb2607f98199356d9fb4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #communication {
+  background: url("../Images/communication.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.__container main .main__container .about__me .about__me__two .about__me__two__main #time__management {
+  background: url("../Images/time.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .__container footer {

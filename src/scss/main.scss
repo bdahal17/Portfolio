@@ -58,8 +58,11 @@ body {
         cursor: pointer;
         font-size: 2em;
         transition: 1s;
+      }
+      .tabs {
+        transition: 0.1s;
         &:hover {
-          background: rgb(224, 212, 36);
+          font-size: 1.2em;
         }
       }
     }
@@ -172,13 +175,18 @@ body {
       .about__me {
         height: 100vh;
         width: 100%;
-        background-color: rgb(114, 211, 250);
+        background: linear-gradient(
+          to bottom left,
+          rgb(52, 127, 189),
+          rgb(131, 180, 196),
+          rgb(44, 126, 151)
+        );
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 100px;
         .about__me__one {
-          background-color: sandybrown;
+          background-color: rgb(177, 177, 177);
           height: 100%;
           width: 60%;
           display: flex;
@@ -195,14 +203,13 @@ body {
             margin-bottom: 1.2em;
           }
           .about__me__profile {
-            background-color: sienna;
+            background-color: rgb(221, 221, 221);
             height: 100%;
             width: 100%;
             padding: 1.2em;
           }
         }
         .about__me__two {
-          background-color: rgb(96, 239, 244);
           height: 100%;
           width: 40%;
           padding: 1.2em;
@@ -210,7 +217,6 @@ body {
           justify-content: center;
           align-items: center;
           .about__me__two__main {
-            background-color: slateblue;
             height: 100%;
             width: 100%;
             display: flex;
@@ -224,9 +230,84 @@ body {
               width: 50px;
               height: 50px;
               margin: 1.1em;
+              box-shadow: 5px 5px 10px rgb(48, 47, 47);
+              transition: 1s;
+              cursor: pointer;
+              &:hover {
+                transform: scale(1.2);
+              }
             }
             #oop {
-              background-image: url("../Images/");
+              background: url("../Images/agile.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #java {
+              background: url("../Images/java.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #javascript {
+              background: url("../Images/javascript.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #css {
+              background: url("../Images/css.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #html {
+              background: url("../Images/html.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #spring__boot {
+              background: url("../Images/spring-boot-logo.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #mvc {
+              background: url("../Images/mvc.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #tdd {
+              background: url("../Images/tdd.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #sql {
+              background: url("../Images/sql.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #restful__api {
+              background: url("../Images/ea4b66f96009bcbb8dcaeb2607f98199356d9fb4.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #communication {
+              background: url("../Images/communication.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            #time__management {
+              background: url("../Images/time.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
             }
           }
         }
@@ -236,13 +317,6 @@ body {
   footer {
     height: 100vh;
     width: 100%;
-    // background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
-    // background: linear-gradient(
-    //   to top right,
-    //   rgb(86, 153, 207),
-    //   rgb(38, 133, 197),
-    //   rgb(95, 166, 224)
-    // );
     display: flex;
     justify-content: center;
     align-items: center;

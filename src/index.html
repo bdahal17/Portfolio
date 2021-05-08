@@ -13,16 +13,29 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="__container">
+    <div id="home" class="__container">
       <header>
         <nav>
-          <div class="__nav __home"><a href="#index.html">Home</a></div>
-          <div class="__nav"><a href="#aboutMe.html">Projects</a></div>
-          <div class="__nav"><a href="#aboutMe.html">Contact Me</a></div>
-          <div class="__nav about__me">
-            <a href="#aboutMe.html">About Me</a>
+          <div class="__nav __home">
+            <a href="#home"><span class="tabs __home">&#127968;</span></a>
           </div>
-          <div class="__nav"><a href="#aboutMe.html">Resume</a></div>
+          <div class="__nav about__me">
+            <a href="#about"><span class="tabs __profile">&#x1F935;</span></a>
+          </div>
+          <div class="__nav">
+            <a href="#contact"><span class="tabs __contact">&#x1F4E7;</span></a>
+          </div>
+          <div class="__nav">
+            <a href="#projects"
+              ><span class="tabs __projects">&#x1F680;</span></a
+            >
+          </div>
+
+          <div class="__nav">
+            <a href="#aboutMe.html"
+              ><span class="tabs __resume">&#128195;</span></a
+            >
+          </div>
         </nav>
 
         <section class="header__main">
@@ -48,8 +61,8 @@
       </header>
       <main>
         <section class="main__container">
-          <div class="__projects"></div>
-          <div class="about__me">
+          <div id="projects" class="__projects"></div>
+          <div id="about" class="about__me">
             <div class="about__me__one">
               <div class="about__me__header">
                 <h1>Bishnu Dahal</h1>
@@ -67,33 +80,27 @@
             </div>
             <div class="about__me__two">
               <div class="about__me__two__main">
-                <div class="skills" id="oop">1</div>
-                <div class="skills" id="java">1</div>
-                <div class="skills" id="javascript">1</div>
-                <div class="skills" id="css">1</div>
-                <div class="skills" id="html">1</div>
-                <div class="skills" id="spring__boot">1</div>
-                <div class="skills" id="mvc">1</div>
-                <div class="skills" id="tdd">1</div>
-                <div class="skills" id="pair__programming">1</div>
-                <div class="skills" id="sql">1</div>
-                <div class="skills" id="relational__database">1</div>
-                <div class="skills" id="jpa__hibernate">1</div>
-                <div class="skills" id="j__unit">1</div>
-                <div class="skills" id="restful__api">1</div>
-                <div class="skills" id="kanban">1</div>
-                <div class="skills" id="communication">1</div>
-                <div class="skills" id="time__management">1</div>
-                <div class="skills" id="digital__literacy">1</div>
+                <div class="skills" id="oop"></div>
+                <div class="skills" id="java"></div>
+                <div class="skills" id="javascript"></div>
+                <div class="skills" id="css"></div>
+                <div class="skills" id="html"></div>
+                <div class="skills" id="spring__boot"></div>
+                <div class="skills" id="mvc"></div>
+                <div class="skills" id="tdd"></div>
+                <div class="skills" id="sql"></div>
+                <div class="skills" id="restful__api"></div>
+                <div class="skills" id="communication"></div>
+                <div class="skills" id="time__management"></div>
               </div>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <div class="footer__container">
+        <div id="contact" class="footer__container">
           <section class="footer__quick">
-            <div class="footer__links">
+            <!-- <div class="footer__links">
               <div class="links__container">
                 <div class="links__header">
                   <h1>Quick Links</h1>
@@ -108,7 +115,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="footer__form">
               <div class="form__container">
                 <form>

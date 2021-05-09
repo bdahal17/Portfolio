@@ -152,7 +152,7 @@ body {
   main {
     height: auto;
     width: 100%;
-    background: rgb(202, 199, 199);
+    background: rgb(26, 26, 26);
     background-position-y: 300px;
     animation: main 1s linear;
     display: flex;
@@ -160,15 +160,77 @@ body {
     align-items: center;
 
     .main__container {
-      height: 500vh;
+      height: 400vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       .__projects {
-        height: 400vh;
+        height: 300vh;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .main__projects {
+          height: 100%;
+          width: 100%;
+          padding: 50px;
+        }
+        .project__content {
+          background-color: blue;
+          height: 100%;
+          width: 100%;
+        }
+        .__one {
+          height: 100%;
+          width: 100%;
+          .container__one {
+            background-color: blanchedalmond;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .__two {
+          height: 100%;
+          width: 100%;
+          .container__two {
+            background-color: blanchedalmond;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .__three {
+          height: 100%;
+          width: 100%;
+          .container__three {
+            background-color: blanchedalmond;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .__four {
+          height: 100%;
+          width: 100%;
+          .container__four {
+            background-color: blanchedalmond;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
       .about__me {
         height: 100vh;

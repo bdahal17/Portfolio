@@ -162,7 +162,7 @@ body {
 .__container main {
   height: auto;
   width: 100%;
-  background: #cac7c7;
+  background: #1a1a1a;
   background-position-y: 300px;
   animation: main 1s linear;
   display: flex;
@@ -171,7 +171,7 @@ body {
 }
 
 .__container main .main__container {
-  height: 500vh;
+  height: 400vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -180,8 +180,80 @@ body {
 }
 
 .__container main .main__container .__projects {
-  height: 400vh;
+  height: 300vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .__projects .main__projects {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+
+.__container main .main__container .__projects .project__content {
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .__projects .__one {
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .__projects .__one .container__one {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .__projects .__two {
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .__projects .__two .container__two {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .__projects .__three {
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .__projects .__three .container__three {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .__projects .__four {
+  height: 100%;
+  width: 100%;
+}
+
+.__container main .main__container .__projects .__four .container__four {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .__container main .main__container .about__me {

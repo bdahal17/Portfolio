@@ -3,7 +3,7 @@ $d: 0.08em;
 $n: 3;
 $e: cubic-bezier(0.86, 0, 0.07, 1);
 $front: black;
-$back: gold;
+$back: rgb(204, 204, 204);
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -75,15 +75,19 @@ body {
         cursor: pointer;
         font-size: 2em;
         transition: 1s;
+
         &:hover {
-          background: gold;
+          // background: gray;
+        }
+        a {
+          color: rgb(218, 218, 218);
         }
       }
       .tabs {
         transition: 0.1s;
-        // &:hover {
-        //   font-size: 1.2em;
-        // }
+        &:hover {
+          font-size: 1.2em;
+        }
       }
     }
     .header__main {
@@ -168,7 +172,7 @@ body {
           align-items: center;
           flex-direction: column;
           background-color: azure;
-          box-shadow: 5px 5px 5px gold;
+          box-shadow: 5px 5px 5px gray;
           .photo__div {
             background: url("../Images/Bishnu-resized.jpg");
             background-position: center;
@@ -195,7 +199,7 @@ body {
             justify-content: center;
             align-items: center;
             button {
-              background-color: gold;
+              background-color: gray;
               border: none;
               width: 100px;
             }
@@ -577,7 +581,7 @@ body {
         //   rgb(38, 133, 197),
         //   rgb(95, 166, 224)
         // );
-        background: gold;
+        background: gray;
         height: 10%;
         width: 100%;
         font-size: 1.2em;
@@ -592,7 +596,7 @@ body {
           align-items: center;
         }
         .contact__logo {
-          background: rgb(207, 183, 62);
+          background: rgb(172, 169, 169);
           height: 100%;
           width: 100%;
           display: flex;

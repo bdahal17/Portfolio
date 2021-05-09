@@ -75,12 +75,16 @@ body::-webkit-scrollbar-thumb {
   transition: 1s;
 }
 
-.__container header nav .__nav:hover {
-  background: gold;
+.__container header nav .__nav a {
+  color: #dadada;
 }
 
 .__container header nav .tabs {
   transition: 0.1s;
+}
+
+.__container header nav .tabs:hover {
+  font-size: 1.2em;
 }
 
 .__container header .header__main {
@@ -120,22 +124,22 @@ body::-webkit-scrollbar-thumb {
 @keyframes ani {
   0% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gold;
+    text-shadow: 0em 0em 0 #cccccc;
     color: black;
   }
   30% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 gold;
+    text-shadow: 0em 0em 0 #cccccc;
     color: black;
   }
   70% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gold;
+    text-shadow: -0.08em 0.08em #cccccc;
     color: black;
   }
   100% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em gold;
+    text-shadow: -0.08em 0.08em #cccccc;
     color: black;
   }
 }
@@ -176,7 +180,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
   background-color: azure;
-  box-shadow: 5px 5px 5px gold;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .__container header .header__main .__profile .__card .photo__div {
@@ -209,7 +213,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container header .header__main .__profile .__card .__button button {
-  background-color: gold;
+  background-color: gray;
   border: none;
   width: 100px;
 }
@@ -606,7 +610,7 @@ body::-webkit-scrollbar-thumb {
 
 .__container footer .footer__container .footer__info {
   font-weight: 300;
-  background: gold;
+  background: gray;
   height: 10%;
   width: 100%;
   font-size: 1.2em;
@@ -624,7 +628,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container footer .footer__container .footer__info .contact__logo {
-  background: #cfb73e;
+  background: #aca9a9;
   height: 100%;
   width: 100%;
   display: flex;

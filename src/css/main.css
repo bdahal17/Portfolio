@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container main {
-  background: linear-gradient(to bottom left, #0254cf, #0ea1d6, #0997c2);
+  background-color: black;
   height: auto;
   width: 100%;
   animation: main 1s linear;
@@ -261,7 +261,7 @@ body::-webkit-scrollbar-thumb {
 .__container main .main__container .__projects .main__projects {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .__container main .main__container .__projects .project__content {
@@ -271,26 +271,30 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #f3f3f3;
 }
 
 .__container main .main__container .__projects .project__content .project__content__header {
-  height: 100%;
+  height: 20%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   letter-spacing: 10px;
+  background: linear-gradient(to top left, #dadada, #c5c5c5, #c2c2c2);
 }
 
 .__container main .main__container .__projects .project__content .project__content__main {
-  height: 100%;
-  width: 100%;
+  height: 40%;
+  width: 90%;
+  font-size: 1.5em;
 }
 
 .__container main .main__container .__projects .project__content .project__content__footer {
-  height: 100%;
-  width: 100%;
+  height: 40%;
+  width: 90%;
+  font-size: 1.5em;
 }
 
 .__container main .main__container .__projects .__one {
@@ -322,6 +326,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__one:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__one .container__one .one__left .project__picture__two {
@@ -331,6 +340,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__two:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__one .container__one .one__left .project__picture__three {
@@ -340,6 +354,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 3;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__three:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__one .container__one .one__left .project__picture__four {
@@ -349,6 +368,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__four:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__one .container__one .one__left .project__picture__five {
@@ -358,6 +382,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 2;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__five:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__two {
@@ -389,6 +418,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__one:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__two .container__two .two__left .project__picture__two {
@@ -398,6 +432,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__two:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__two .container__two .two__left .project__picture__three {
@@ -407,6 +446,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 3;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__three:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__two .container__two .two__left .project__picture__four {
@@ -416,6 +460,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__four:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__two .container__two .two__left .project__picture__five {
@@ -425,6 +474,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 2;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__five:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__three {
@@ -456,6 +510,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__one:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__three .container__three .three__left .project__picture__two {
@@ -465,6 +524,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__two:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__three .container__three .three__left .project__picture__three {
@@ -474,6 +538,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 3;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__three:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__three .container__three .three__left .project__picture__four {
@@ -483,6 +552,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__four:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__three .container__three .three__left .project__picture__five {
@@ -492,6 +566,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 2;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__five:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__four {
@@ -523,6 +602,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__one:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__four .container__four .four__left .project__picture__two {
@@ -532,6 +616,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__two:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__four .container__four .four__left .project__picture__three {
@@ -541,6 +630,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 3;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__three:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__four .container__four .four__left .project__picture__four {
@@ -550,6 +644,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 1;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__four:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .__projects .__four .container__four .four__left .project__picture__five {
@@ -559,6 +658,11 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   width: 200px;
   flex-grow: 2;
+  transition: 1s;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__five:hover {
+  transform: scale(1.05);
 }
 
 .__container main .main__container .about__me {

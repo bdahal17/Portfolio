@@ -217,12 +217,13 @@ body {
     }
   }
   main {
-    background: linear-gradient(
-      to bottom left,
-      rgb(2, 84, 207),
-      rgb(14, 161, 214),
-      rgb(9, 151, 194)
-    );
+    // background: linear-gradient(
+    //   to left,
+    //   rgb(167, 167, 167),
+    //   rgb(0, 0, 0),
+    //   rgb(211, 211, 211)
+    // );
+    background-color: black;
     height: auto;
     width: 100%;
     animation: main 1s linear;
@@ -248,7 +249,7 @@ body {
         .main__projects {
           height: 100%;
           width: 100%;
-          padding: 20px;
+          padding: 1.2em;
           // background-color: brown;
         }
         .project__content {
@@ -258,23 +259,32 @@ body {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          background-color: rgb(243, 243, 243);
 
           .project__content__header {
-            height: 100%;
+            height: 20%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 2em;
             letter-spacing: 10px;
+            background: linear-gradient(
+              to top left,
+              rgb(218, 218, 218),
+              rgb(197, 197, 197),
+              rgb(194, 194, 194)
+            );
           }
           .project__content__main {
-            height: 100%;
-            width: 100%;
+            height: 40%;
+            width: 90%;
+            font-size: 1.5em;
           }
           .project__content__footer {
-            height: 100%;
-            width: 100%;
+            height: 40%;
+            width: 90%;
+            font-size: 1.5em;
           }
         }
         .__one {
@@ -301,6 +311,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__two {
                 background: url("../Images/Bishnu-resized.jpg");
@@ -309,6 +323,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__three {
                 background: url("../Images/Capture.PNG");
@@ -317,6 +335,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 3;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__four {
                 background: url("../Images/communication.png");
@@ -325,6 +347,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__five {
                 background: url("../Images/css.png");
@@ -333,6 +359,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 2;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
             }
           }
@@ -361,6 +391,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__two {
                 background: url("../Images/mvc.png");
@@ -369,6 +403,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__three {
                 background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
@@ -377,6 +415,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 3;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__four {
                 background: url("../Images/niklas-priddat-kqJJqamhZMg-unsplash.jpg");
@@ -385,6 +427,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__five {
                 background: url("../Images/pexels-david-underland-3610226.jpg");
@@ -393,6 +439,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 2;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
             }
           }
@@ -421,6 +471,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__two {
                 background: url("../Images/pexels-eberhard-grossgasteiger-691668.jpg");
@@ -429,6 +483,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__three {
                 background: url("../Images/pexels-philipp-brügger-5894435.jpg");
@@ -437,6 +495,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 3;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__four {
                 background: url("../Images/pexels-photo-5129647.jpeg");
@@ -445,6 +507,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__five {
                 background: url("../Images/piano.png");
@@ -453,6 +519,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 2;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
             }
           }
@@ -481,6 +551,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__two {
                 background: url("../Images/sass.png");
@@ -489,6 +563,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__three {
                 background: url("../Images/sdlc.png");
@@ -497,6 +575,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 3;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__four {
                 background: url("../Images/sky1.jpeg");
@@ -505,6 +587,10 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 1;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
               .project__picture__five {
                 background: url("../Images/sky2.jpeg");
@@ -513,8 +599,15 @@ body {
                 height: 50%;
                 width: 200px;
                 flex-grow: 2;
+                transition: 1s;
+                &:hover {
+                  transform: scale(1.05);
+                }
               }
             }
+            // .four__right {
+            //   background-color: rgb(109, 134, 146);
+            // }
           }
         }
       }

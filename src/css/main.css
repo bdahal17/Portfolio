@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -254,16 +255,16 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .__container main .main__container .__projects .main__projects {
   height: 100%;
   width: 100%;
-  padding: 50px;
+  padding: 20px;
 }
 
 .__container main .main__container .__projects .project__content {
-  background-color: #bdbdbd;
   height: 100%;
   width: 100%;
   display: flex;
@@ -306,6 +307,59 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.__container main .main__container .__projects .__one .container__one .one__left {
+  background-color: #d4d4d4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__one {
+  background: url("../Images/bananaMaker.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__two {
+  background: url("../Images/Bishnu-resized.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__three {
+  background: url("../Images/Capture.PNG");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 3;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__four {
+  background: url("../Images/communication.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__one .container__one .one__left .project__picture__five {
+  background: url("../Images/css.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 2;
+}
+
 .__container main .main__container .__projects .__two {
   height: 100%;
   width: 100%;
@@ -318,6 +372,59 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left {
+  background-color: #d4d4d4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__one {
+  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__two {
+  background: url("../Images/mvc.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__three {
+  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 3;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__four {
+  background: url("../Images/niklas-priddat-kqJJqamhZMg-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__two .container__two .two__left .project__picture__five {
+  background: url("../Images/pexels-david-underland-3610226.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 2;
 }
 
 .__container main .main__container .__projects .__three {
@@ -334,6 +441,59 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.__container main .main__container .__projects .__three .container__three .three__left {
+  background-color: #d4d4d4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__one {
+  background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__two {
+  background: url("../Images/pexels-eberhard-grossgasteiger-691668.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__three {
+  background: url("../Images/pexels-philipp-brügger-5894435.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 3;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__four {
+  background: url("../Images/pexels-photo-5129647.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__three .container__three .three__left .project__picture__five {
+  background: url("../Images/piano.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 2;
+}
+
 .__container main .main__container .__projects .__four {
   height: 100%;
   width: 100%;
@@ -346,6 +506,59 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left {
+  background-color: #d4d4d4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__one {
+  background: url("../Images/RESTful-API-logo-for-light-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__two {
+  background: url("../Images/sass.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__three {
+  background: url("../Images/sdlc.png");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 3;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__four {
+  background: url("../Images/sky1.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 1;
+}
+
+.__container main .main__container .__projects .__four .container__four .four__left .project__picture__five {
+  background: url("../Images/sky2.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 200px;
+  flex-grow: 2;
 }
 
 .__container main .main__container .about__me {

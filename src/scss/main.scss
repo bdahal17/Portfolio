@@ -237,7 +237,6 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
       .__projects {
         height: 300vh;
         width: 100%;
@@ -245,20 +244,21 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: 20px;
         .main__projects {
           height: 100%;
           width: 100%;
-          padding: 50px;
+          padding: 20px;
+          // background-color: brown;
         }
         .project__content {
-          background-color: rgb(189, 189, 189);
           height: 100%;
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+
           .project__content__header {
             height: 100%;
             width: 100%;
@@ -287,6 +287,54 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            .one__left {
+              background-color: rgb(212, 212, 212);
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .project__picture__one {
+                background: url("../Images/bananaMaker.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__two {
+                background: url("../Images/Bishnu-resized.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__three {
+                background: url("../Images/Capture.PNG");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 3;
+              }
+              .project__picture__four {
+                background: url("../Images/communication.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__five {
+                background: url("../Images/css.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 2;
+              }
+            }
           }
         }
         .__two {
@@ -299,6 +347,54 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            .two__left {
+              background-color: rgb(212, 212, 212);
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .project__picture__one {
+                background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__two {
+                background: url("../Images/mvc.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__three {
+                background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 3;
+              }
+              .project__picture__four {
+                background: url("../Images/niklas-priddat-kqJJqamhZMg-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__five {
+                background: url("../Images/pexels-david-underland-3610226.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 2;
+              }
+            }
           }
         }
         .__three {
@@ -311,6 +407,54 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            .three__left {
+              background-color: rgb(212, 212, 212);
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .project__picture__one {
+                background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__two {
+                background: url("../Images/pexels-eberhard-grossgasteiger-691668.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__three {
+                background: url("../Images/pexels-philipp-brügger-5894435.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 3;
+              }
+              .project__picture__four {
+                background: url("../Images/pexels-photo-5129647.jpeg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__five {
+                background: url("../Images/piano.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 2;
+              }
+            }
           }
         }
         .__four {
@@ -323,6 +467,54 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            .four__left {
+              background-color: rgb(212, 212, 212);
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              .project__picture__one {
+                background: url("../Images/RESTful-API-logo-for-light-bg.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__two {
+                background: url("../Images/sass.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__three {
+                background: url("../Images/sdlc.png");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 3;
+              }
+              .project__picture__four {
+                background: url("../Images/sky1.jpeg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 1;
+              }
+              .project__picture__five {
+                background: url("../Images/sky2.jpeg");
+                background-position: center;
+                background-size: cover;
+                height: 50%;
+                width: 200px;
+                flex-grow: 2;
+              }
+            }
           }
         }
       }

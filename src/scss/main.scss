@@ -34,7 +34,14 @@ body {
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
-
+  .object {
+    margin-top: 3em;
+    position: fixed;
+    height: 92%;
+    width: 82%;
+    display: none;
+    top: 0;
+  }
   header {
     height: 100vh;
     width: 100%;
@@ -70,9 +77,6 @@ body {
         font-size: 2em;
         transition: 1s;
 
-        &:hover {
-          // background: gray;
-        }
         a {
           color: rgb(218, 218, 218);
         }
@@ -90,7 +94,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 7em;
+      padding: 8em;
 
       .__skills {
         color: black;
@@ -119,7 +123,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: 10px solid black;
+    padding: 5em;
     .main__container {
       height: 200vh;
       width: 100%;
@@ -134,12 +139,58 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2em;
+        .project__header {
+          background-color: aquamarine;
+          height: 35%;
+          width: 100%;
+        }
+        .project__main {
+          background: linear-gradient(
+            to bottom left,
+            rgb(37, 108, 201),
+            rgb(33, 110, 197),
+            rgb(25, 56, 196)
+          );
+          height: 50%;
+          width: 100%;
+          padding: 1.1em;
+          color: whitesmoke;
+        }
+        .project__footer {
+          background-color: rgb(21, 42, 112);
+          height: 15%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .project__button {
+            button {
+              width: 10em;
+              height: 2em;
+              background: rgb(235, 235, 235);
+              border: none;
+              cursor: pointer;
+              &:hover {
+                background: rgb(185, 185, 185);
+              }
+            }
+          }
+        }
         .project__one {
-          background-color: rgb(226, 223, 43);
           height: 100%;
           width: 100%;
           grid-row: 2 / 7;
           grid-column: 2 / 4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .one__header {
+            background: url("../Images/virtual-x.PNG");
+            background-position: center;
+            background-size: cover;
+          }
         }
         .project__two {
           background-color: rgb(226, 43, 128);
@@ -147,6 +198,15 @@ body {
           width: 100%;
           grid-row: 2 / 7;
           grid-column: 4 / 6;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .two__header {
+            background: url("../Images/bananaMaker.png");
+            background-position: center;
+            background-size: cover;
+          }
         }
         .project__three {
           background-color: rgb(43, 226, 89);
@@ -154,6 +214,15 @@ body {
           width: 100%;
           grid-row: 2 / 7;
           grid-column: 6 / 8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .three__header {
+            background: url("../Images/Capture.PNG");
+            background-position: center;
+            background-size: cover;
+          }
         }
         .project__four {
           background-color: blueviolet;
@@ -161,6 +230,15 @@ body {
           width: 100%;
           grid-row: 2 / 7;
           grid-column: 8 / 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .four__header {
+            background: url("../Images/piano.png");
+            background-position: center;
+            background-size: cover;
+          }
         }
       }
       .about__me {
@@ -170,30 +248,32 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 100px;
+        padding: 8em;
 
         .about__me__one {
+          background: rgb(19, 64, 133);
           height: 100%;
           width: 60%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          padding: 25px;
+          padding: 5em;
           box-shadow: 5px 5px 5px rgb(211, 211, 211);
           .about__me__header {
             width: 100%;
-            height: 30%;
+            height: 100%;
             letter-spacing: 5px;
             font-size: 1.5em;
-            margin-left: 1.2em;
             margin-bottom: 1.2em;
+            // border: 5px solid rgb(240, 228, 228);
           }
           .about__me__profile {
-            background-color: rgb(221, 221, 221);
+            font-weight: 200;
             height: 100%;
             width: 100%;
-            padding: 1.2em;
+            color: rgb(182, 182, 182);
+            // border: 5px solid red;
           }
         }
         .about__me__two {
@@ -349,7 +429,12 @@ body {
               font-weight: 300;
               fieldset {
                 padding: 20px;
-                background: rgb(172, 172, 172);
+                background: linear-gradient(
+                  to bottom left,
+                  rgb(156, 202, 228),
+                  rgb(42, 116, 214),
+                  rgb(74, 184, 228)
+                );
                 width: 75%;
                 height: 100%;
                 display: flex;
@@ -401,13 +486,12 @@ body {
       }
       .footer__info {
         font-weight: 300;
-        // background: linear-gradient(
-        //   to top right,
-        //   rgb(86, 153, 207),
-        //   rgb(38, 133, 197),
-        //   rgb(95, 166, 224)
-        // );
-        background: gray;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(
+          to right,
+          rgb(48, 137, 209),
+          rgb(53, 153, 160)
+        );
         height: 10%;
         width: 100%;
         font-size: 1.2em;
@@ -415,6 +499,7 @@ body {
         justify-content: space-evenly;
         align-items: center;
         p {
+          font-size: 1.2em;
           height: 100%;
           width: 100%;
           display: flex;
@@ -422,12 +507,29 @@ body {
           align-items: center;
         }
         .contact__logo {
-          background: rgb(172, 169, 169);
+          background: rgb(22, 89, 190);
           height: 100%;
           width: 100%;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
+
+          .__linkedin {
+            height: 50%;
+            width: 25%;
+            background-image: url("../Images/next-linkedin.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
+          .__github {
+            height: 50%;
+            width: 25%;
+            background-image: url("../Images/GitHub-Emblem.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+          }
         }
       }
     }

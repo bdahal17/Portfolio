@@ -19,11 +19,20 @@
   </head>
   <body>
     <div id="home" class="__container">
+      <object class="object" data="./Images/Bishnu Dahal.pdf" type="application/pdf">
+        <embed src="./Images/Bishnu Dahal.pdf" type="application/pdf" />
+      </object>
       <header>
         <nav>
           <div class="__nav __home">
             <a href="#home"><span class="tabs __home">&#127968;</span>
             <!-- <a href="#home"><span class="tabs __home">Home</span> </a> -->
+          </div>
+          <div class="__nav">
+            <a href="#projects">
+              <span class="tabs __projects">&#x1F680;</span>
+             
+            </a>
           </div>
           <div class="__nav about__me">
             <a href="#about"><span class="tabs __profile">&#x1F935;</span>
@@ -34,22 +43,17 @@
             <!-- <a href="#contact"><span class="tabs __contact">Contact</span> 
             </a> -->
           </div>
-          <div class="__nav">
-            <a href="#projects">
-              <span class="tabs __projects">&#x1F680;</span>
-              <!-- <span class="tabs __projects">Projects</span> -->
-            </a>
-          </div>
 
           <div class="__nav">
-            <a href="#aboutMe.html">
+            <a class="resume__button">
               <span class="tabs __resume">&#128195;</span>
-              <!-- <span class="tabs __resume">Resume</span> -->
             </a>
+            
           </div>
         </nav>
 
         <section class="header__main">
+         
           <div class="__skills">
            
           </div>
@@ -58,12 +62,57 @@
         </section>
       </header>
       <main>
-        <section class="main__container">
+        <section id="projects" class="main__container">
           <div class="__projects">
-            <div class="project__one"></div>
-            <div class="project__two"></div>
-            <div class="project__three"></div>
-            <div class="project__four"></div>
+            <div class="project__one">
+              <div class="one__header project__header">
+                
+              </div>
+              <div class="one__main project__main">
+                <p>  Web application for businesses to help remote employees better connect themselves using work friendly challenges and chatrooms. Java, JavaScript, CSS  & HTML</p>
+              </div>
+              <div class="one__footer project__footer">
+                <div class="project__button">
+                  <button>Virtual-X</button>
+                </div>
+              </div>
+            </div>
+            <div class="project__two">
+              <div class="two__header project__header"></div>
+              <div class="two__main project__main">
+                <p> Web game that allows users to generate currency using clicks to purchase features. 
+                  JavaScript, SASS & HTML</p>
+              </div>
+              <div class="two__footer project__footer">
+                <div class="project__button">
+                  <button>Extreme Banana C.</button>
+                </div>
+              </div>
+            </div>
+            <div class="project__three">
+              <div class="three__header project__header"></div>
+              <div class="three__main project__main">
+                <p> Web game that allows users to generate currency using clicks to purchase features. 
+                  JavaScript, SASS & HTML</p>
+              </div>
+              <div class="three__footer project__footer">
+                <div class="project__button">
+                  <button>Blog Application</button>
+                </div>
+              </div>
+            </div>
+            <div class="project__four">
+              <div class="four__header project__header"></div>
+              <div class="four__main project__main">
+                <p> Web game that allows users to generate currency using clicks to purchase features. 
+                  JavaScript, SASS & HTML</p>
+              </div>
+              <div class="four__footer project__footer">
+                <div class="project__button">
+                  <button>Piano-Player</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="about" class="about__me">
             <div class="about__me__one">
@@ -137,13 +186,14 @@
             <p>&copy2021</p>
             <p>Designed by: Bishnu Dahal</p>
             <div class="contact__logo">
-              <div>LinkedIn</div>
-              <div>GitHub</div>
-              <div>email</div>
+              <a class="__linkedin" href="https://www.linkedin.com/in/bdahal17/" target="_blank"></a>
+              <a class="__github" href="https://github.com/bdahal17?tab=repositories" target="_blank"></a>
+              <!-- <div class="__">email</div> -->
             </div>
           </section>
         </div>
       </footer>
     </div>
+    <script src="/src/JS/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -30,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container {
-  background: url("../Images/12.jpg");
+  background: url("../Images/pexels-photo-5129647.jpeg");
   background-position: top;
   background-size: cover;
   height: auto;
@@ -91,145 +90,26 @@ body::-webkit-scrollbar-thumb {
 .__container header .header__main {
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 7em;
 }
 
 .__container header .header__main .__skills {
   color: black;
   height: 100%;
-  width: 65%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  background: rgba(108, 150, 184, 0.2);
-}
-
-.__container header .header__main .__skills h1 {
-  font-weight: 200;
-  font-size: 2em;
-  letter-spacing: 3px;
-}
-
-.__container header .header__main .__skills h1 .popout {
-  font-weight: 300;
-  font-size: 2em;
-  padding: 80px;
-}
-
-@keyframes ani {
-  0% {
-    transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 #cccccc;
-    color: black;
-  }
-  30% {
-    transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 #cccccc;
-    color: black;
-  }
-  70% {
-    transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em #cccccc;
-    color: black;
-  }
-  100% {
-    transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em #cccccc;
-    color: black;
-  }
-}
-
-.__container header .header__main .__skills h1 .popout span {
-  position: relative;
-  display: inline-block;
-  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.__container header .header__main .__skills h1 .popout span:nth-last-child(1n) {
-  animation-delay: -0.16667s;
-}
-
-.__container header .header__main .__skills h1 .popout span:nth-last-child(2n) {
-  animation-delay: -0.33333s;
-}
-
-.__container header .header__main .__skills h1 .popout span:nth-last-child(3n) {
-  animation-delay: -0.5s;
-}
-
-.__container header .header__main .__profile {
-  height: 100%;
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  background: rgba(108, 150, 184, 0.2);
-}
-
-.__container header .header__main .__profile .__card {
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: azure;
-  box-shadow: 5px 5px 5px gray;
-}
-
-.__container header .header__main .__profile .__card .photo__div {
-  background: url("../Images/Bishnu-resized.jpg");
-  background-position: center;
+  background-position: left;
+  background-image: url("../Images/5.png");
   background-size: cover;
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-.__container header .header__main .__profile .__card .dev__div {
-  height: 25%;
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.__container header .header__main .__profile .__card .dev__div h4 {
-  font-weight: 400;
-}
-
-.__container header .header__main .__profile .__card .__button {
-  height: 25%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container header .header__main .__profile .__card .__button button {
-  background-color: gray;
-  border: none;
-  width: 100px;
-}
-
-.__container header .header__main .__profile .__image {
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.__container header .header__main .__profile .__image:hover {
-  transform: scale(1.01);
-  opacity: 1;
 }
 
 .__container main {
+  background: linear-gradient(to left bottom, #a7a7a7, #2d84d6, #0a80ee);
   background-color: black;
   height: auto;
   width: 100%;
@@ -240,7 +120,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container main .main__container {
-  height: 400vh;
+  height: 200vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -249,420 +129,43 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container main .main__container .__projects {
-  height: 300vh;
+  height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.__container main .main__container .__projects .main__projects {
+.__container main .main__container .__projects .project__one {
+  background-color: #e2df2b;
   height: 100%;
   width: 100%;
-  padding: 1.2em;
+  grid-row: 2 / 7;
+  grid-column: 2 / 4;
 }
 
-.__container main .main__container .__projects .project__content {
+.__container main .main__container .__projects .project__two {
+  background-color: #e22b80;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f3f3f3;
+  grid-row: 2 / 7;
+  grid-column: 4 / 6;
 }
 
-.__container main .main__container .__projects .project__content .project__content__header {
-  height: 20%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  letter-spacing: 10px;
-  background: linear-gradient(to top left, #dadada, #c5c5c5, #c2c2c2);
-}
-
-.__container main .main__container .__projects .project__content .project__content__main {
-  height: 40%;
-  width: 90%;
-  font-size: 1.5em;
-}
-
-.__container main .main__container .__projects .project__content .project__content__footer {
-  height: 40%;
-  width: 90%;
-  font-size: 1.5em;
-}
-
-.__container main .main__container .__projects .__one {
+.__container main .main__container .__projects .project__three {
+  background-color: #2be259;
   height: 100%;
   width: 100%;
+  grid-row: 2 / 7;
+  grid-column: 6 / 8;
 }
 
-.__container main .main__container .__projects .__one .container__one {
-  background-color: blanchedalmond;
+.__container main .main__container .__projects .project__four {
+  background-color: blueviolet;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left {
-  background-color: #d4d4d4;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__one {
-  background: url("../Images/bananaMaker.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__one:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__two {
-  background: url("../Images/Bishnu-resized.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__two:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__three {
-  background: url("../Images/Capture.PNG");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 3;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__three:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__four {
-  background: url("../Images/communication.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__four:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__five {
-  background: url("../Images/css.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 2;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__one .container__one .one__left .project__picture__five:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__two {
-  height: 100%;
-  width: 100%;
-}
-
-.__container main .main__container .__projects .__two .container__two {
-  background-color: blanchedalmond;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left {
-  background-color: #d4d4d4;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__one {
-  background: url("../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__one:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__two {
-  background: url("../Images/mvc.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__two:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__three {
-  background: url("../Images/nicontents-kpecdEdzMWU-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 3;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__three:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__four {
-  background: url("../Images/niklas-priddat-kqJJqamhZMg-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__four:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__five {
-  background: url("../Images/pexels-david-underland-3610226.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 2;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__two .container__two .two__left .project__picture__five:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__three {
-  height: 100%;
-  width: 100%;
-}
-
-.__container main .main__container .__projects .__three .container__three {
-  background-color: blanchedalmond;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left {
-  background-color: #d4d4d4;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__one {
-  background: url("../Images/pexels-drift-shutterbug-2085998.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__one:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__two {
-  background: url("../Images/pexels-eberhard-grossgasteiger-691668.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__two:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__three {
-  background: url("../Images/pexels-philipp-brügger-5894435.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 3;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__three:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__four {
-  background: url("../Images/pexels-photo-5129647.jpeg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__four:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__five {
-  background: url("../Images/piano.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 2;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__three .container__three .three__left .project__picture__five:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__four {
-  height: 100%;
-  width: 100%;
-}
-
-.__container main .main__container .__projects .__four .container__four {
-  background-color: blanchedalmond;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left {
-  background-color: #d4d4d4;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__one {
-  background: url("../Images/RESTful-API-logo-for-light-bg.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__one:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__two {
-  background: url("../Images/sass.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__two:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__three {
-  background: url("../Images/sdlc.png");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 3;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__three:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__four {
-  background: url("../Images/sky1.jpeg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 1;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__four:hover {
-  transform: scale(1.05);
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__five {
-  background: url("../Images/sky2.jpeg");
-  background-position: center;
-  background-size: cover;
-  height: 50%;
-  width: 200px;
-  flex-grow: 2;
-  transition: 1s;
-}
-
-.__container main .main__container .__projects .__four .container__four .four__left .project__picture__five:hover {
-  transform: scale(1.05);
+  grid-row: 2 / 7;
+  grid-column: 8 / 10;
 }
 
 .__container main .main__container .about__me {
@@ -675,7 +178,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .__container main .main__container .about__me .about__me__one {
-  background: linear-gradient(to bottom left, #c9c7c7, #9fb2bb, #bdbdbd);
   height: 100%;
   width: 60%;
   display: flex;

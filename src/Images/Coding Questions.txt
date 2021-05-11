@@ -1,0 +1,572 @@
+﻿JAVA/GENERAL
+What are the pillars of OOP (APIE)?
+
+
+What does instantiation mean?
+
+
+What is the difference between data types and data structures?
+
+
+What are primitive data types?
+
+
+What are some iterable data types?
+
+
+What is a literal?
+
+
+What is type casting?
+
+
+What is method overloading?
+
+
+What is the difference in a method and a function?
+
+
+What is a local variable vs global variable vs instance variable vs field?
+
+
+What is mutable vs immutable?
+
+
+What is method overriding?
+
+
+What is a constructor?
+
+
+What is multithreading and threadpool?
+
+
+What is the static keyword and what does it do?
+
+
+What is the final keyword?
+
+
+What is the difference in functional programming and object oriented programming?
+
+
+What is pass-by-reference vs pass-by-value?
+
+
+Is Java pass-by-reference or pass-by-value? JavaScript?
+
+
+Does Java support string interpolation? or: What is String.format()?
+
+
+What is strongly typed vs loosely typed?
+
+
+What is coupling? Loose coupling vs tight coupling?
+
+
+What is a library vs a framework?
+
+
+What is Springboot?
+
+
+What is gradle or maven?
+
+
+What is a null pointer exception?
+
+
+What is an out of bounds exception?
+
+
+What is = vs ==?
+
+
+What is IOC? DI?
+
+
+What are the common actions in debugging code?
+
+
+What is a watch (debugging)?
+
+
+What is platform independence? How does Java achieve this?
+
+
+What are the access specifiers for Java classes? (encapsulation)
+
+
+What’s the difference between ArrayList and HashMap?
+
+
+What are the loops in Java?
+
+
+What is a stream?
+
+
+Explain heap and stack.
+
+
+Explain recursion.
+
+
+What is a switch case? What does default mean?
+
+
+What is an exception?
+
+
+What is try, catch, finally?
+
+
+What does throw mean?
+
+
+What are bitwise and bitshift operators?
+
+
+What are enums?
+
+
+Can you override a private method in Java?
+
+
+What does a private constructor do?
+
+
+What’s the difference in abstract class and interface?
+
+
+What is the this keyword?
+
+
+What is a package and why is it important?
+
+
+What is the difference in strongly typed vs loosely (weakly) typed languages?
+
+
+Does a method have to have a return type?
+
+
+What is JSP?
+
+
+What is JSTL?
+
+
+What is H2 vs Hibernate vs JPA?
+
+
+What is a controller?
+
+
+What is a POJO? (Model)
+
+
+What is a view in Java?
+
+
+What is a wrapper class?
+
+
+What is a string pool?
+
+
+Can a string pool have duplicates?
+
+
+How do you make an API call in Java?
+
+
+Explain authentication vs authorization.
+
+
+Explain the single responsibility principle?
+
+
+What is SOLID?
+________________
+
+
+TESTING
+What is a mock?
+
+
+What does @before do?
+
+
+What is the difference in E2E and UTC?
+
+
+What are the three stages when setting up a unit test?
+
+
+Explain the assert stage?
+
+
+Explain the act stage?
+
+
+Explain the assert stage?
+
+
+________________
+
+
+GIT
+What is the process of pushing to a repo? (git commands)
+
+
+What does “git add .” mean? What does the “.” mean?
+
+
+What is the difference in “git commit -a” vs “git add .”?
+
+
+What does “-m” mean in “git commit”?
+
+
+What is the difference between “git commit” and “git push”?
+
+
+Do you have to “git push” after every “git commit”?
+
+
+What is a merge conflict?
+
+
+What is a pull request?
+
+
+What is branching?
+
+
+What are some common branches?
+
+
+What is git stash?
+
+
+What does it mean to stage?
+
+
+What is git clone?
+
+
+What is git?
+
+
+What is a DVCS? (Distributed Version Control System)?
+
+
+What language is used in Git?
+________________
+FRONT END QUESTIONS
+Which version(s) of HTML and CSS are you familiar with?
+
+
+What are 3 ways to integrate CSS or JS in HTML?
+
+
+Are you familiar with any CSS frameworks, libraries, or preprocessors?
+
+
+What is a complex property?
+
+
+Can you identify the different components of CSS?
+        .my-div { color: red; }
+
+
+Can you use a CSS variable across multiple CSS sheets?
+
+
+What is the difference in a simple selector, pseudo-selector, pseudo-class-selector, pseudo-element-selector?
+
+
+What is a combinator?
+
+
+How do you declare and implement CSS3 variables?
+
+
+What is the difference in opacity and alpha?
+
+
+What color formats are accepted in CSS3?
+
+
+What’s the difference in RGB and RGBA? How do you apply an alpha?
+
+
+What are the bounds of each color format?
+
+
+What is the universal selector? When is it not required?
+
+
+Explain all units: vw, vh, vmin, vmax, ch, pt, px, %, rem, em, s, ms, deg?
+
+
+What is Separation of Concerns regarding HTML, CSS, and JS?
+
+
+What are unset, none, initial, and inherit keywords?
+What is z-index? What does it require?
+
+
+Explain positions: static, relative, absolute, sticky, fixed.
+
+
+What’s the difference in visibility: hidden and display: none?
+
+
+What’s the difference in display: block and display: inline?
+
+
+What is ::before and ::after? What do they require?
+
+
+What is :empty(), :not(), :is()?
+
+
+What is attr(), calc(), var()?
+
+
+What are the parts of html?
+        <div class=”div1” texteditable>Hello World!</div>
+
+
+What are data-attributes?
+
+
+Can I create my own element tags in HTML and reference them in CSS? Ex:
+         <horse>This is a horse</horse>
+    horse { color: red }
+
+
+What’s the difference in putting style tags in the head vs body?
+
+
+(VS CODE) Explain Emmet Abbreviations (CSS/HTML/JS).
+
+
+(VS CODE) What would this produce: .red>.blue*3+btn.submit{click}
+
+
+What does it mean for CSS to paint?
+________________
+
+
+JAVASCRIPT
+What is “module”?
+
+
+Explain import and export.
+
+
+What’s the difference in var, let, and const?
+
+
+What happens if you don’t declare a variable?
+
+
+What is method chaining?
+
+
+How do you create method chaining?
+
+
+What is hoisting?
+
+
+What is a prototype?
+
+
+What is a JSON?
+
+
+What is AJAX?
+
+
+What is recursion?
+
+
+How does JS access the DOM?
+
+
+What is the difference in =, ==, ===?
+
+
+How do you call a function?
+
+
+What’s the difference in undeclared, undefined, and null?
+
+
+How do you get a value in an object using a variable for the key?
+
+
+What’s the difference in a named function, anonymous function and lambda function?
+
+
+What’s the difference in True/False and Truthy/Falsey?
+
+
+What does !! do?
+
+
+Is there a difference in an integer and a decimal in JS?
+
+
+How do you reference a data type from another JS file? (2 ways)
+
+
+What is Symbol?
+
+
+What’s the difference in ?? and ||?
+
+
+What is optional chaining?
+
+
+What is abstraction in JS?
+
+
+What is event propagation? What are the 3 stages?
+
+
+What is event capturing?
+
+
+What is event bubbling?
+
+
+What is event triggering?
+
+
+How do you prevent event propagation?
+
+
+How do you stop an event from occurring?
+
+
+What are higher order functions?
+
+
+How do you create an optional parameter in JS?
+
+
+How do you create an optional parameter when the function depends on a value for that parameter?
+
+
+How do you create unlimited parameters in JS?
+What is a callback function?
+
+
+What is requestAnimationFrame()?
+
+
+What is console.log? console.error?
+
+
+What is local storage?
+
+
+What is a cookie? How is it stored and retrieved?
+
+
+What is destructuring?
+
+
+What is the spread operator (...)?
+
+
+Explain the arguments keyword.
+
+
+What’s the difference in a list (NodeList/TokenList) and an array?
+
+
+What is the difference in Array.map() and Array.forEach()?
+
+
+What are closures?
+
+
+What is scope?
+
+
+What are pure functions?
+
+
+What is a predicate function?
+
+
+What is strict mode?
+
+
+How do you return a function?
+
+
+What is the benefit of returning a function?
+    
+What are combinator predicates?
+
+
+What is currying?
+
+
+What is the Revealing Module Pattern?
+
+
+What is the DOMContentLoaded event?
+
+
+What is the difference in call, apply, bind?
+
+
+Explain Async, Await, Promise, Fetch.
+
+
+What is Regex?
+
+
+Explain this. (Global, local, Window/BOM)
+
+
+When are the braces { } optional for an if statement, loop, or lambda function?
+
+
+When are the parentheses optional for a lambda function?
+
+
+Explain implicit return with lambda.
+
+
+What are the common loops in JS?
+
+
+What is the difference in for...in and for...of?
+
+
+What is the difference in while and do...while?
+
+
+What is a generator function?
+
+
+How would you improve this code to handle unlimited parameters?
+
+
+        const addClasses = (el, cl1, cl2, cl3, cl4) => {
+                if (cl1) el.classList.add(cl1);
+                if (cl2) el.classList.add(cl2);
+                if (cl3) el.classList.add(cl3);
+                if (cl4) el.classList.add(cl4);
+}

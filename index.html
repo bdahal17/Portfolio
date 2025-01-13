@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan Dahal - Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2d3436;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2d3436;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0984e3;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("../Images/12.jpg");
+      background-position: top;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: white;
+      color: #0984e3;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .projects {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #2d3436;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 8px;
+    }
+
+    .project-image {
+      flex: 1 1 calc(33.333% - 4px);
+      min-width: 100px;
+      height: 120px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-image:hover {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+    }
+
+    .project-desc {
+      color: #636e72;
+      margin-bottom: 1rem;
+    }
+
+    .project-tech {
+      color: #0984e3;
+      font-size: 0.9rem;
+    }
+
+    .about {
+      background: white;
+      padding: 5rem 2rem;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .skill-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact {
+      padding: 5rem 2rem;
+      background: #f5f5f5;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .submit-button {
+      background: #0984e3;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background: #0873c4;
+    }
+
+    footer {
+      background: #2d3436;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-links a:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-content">
+    <a href="#" class="nav-logo">PD</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm Pawan Dahal</h1>
+    <p>Java Software Engineer passionate about creating efficient and scalable solutions</p>
+    <a href="#contact" class="cta-button">Get in Touch</a>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-image-grid">
+        <div class="project-image" style="background-image: url('../Images/bananaMaker.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/Bishnu-resized.jpg')"></div>
+        <div class="project-image" style="background-image: url('../Images/Capture.PNG')"></div>
+        <div class="project-image" style="background-image: url('../Images/communication.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/css.png')"></div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Virtual-X</h3>
+        <p class="project-desc">Web application for businesses to help remote employees better connect through work-friendly challenges and chatrooms.</p>
+        <p class="project-tech">Java • Spring • REST API • JavaScript</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-image-grid">
+        <div class="project-image" style="background-image: url('../Images/max-kleinen-ohQinqTl_DE-unsplash.jpg')"></div>
+        <div class="project-image" style="background-image: url('../Images/mvc.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/nicontents-kpecdEdzMWU-unsplash.jpg')"></div>
+        <div class="project-image" style="background-image: url('../Images/niklas-priddat-kqJJqamhZMg-unsplash.jpg')"></div>
+        <div class="project-image" style="background-image: url('../Images/pexels-david-underland-3610226.jpg')"></div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Extreme Banana Maker</h3>
+        <p class="project-desc">Interactive web game with currency generation and feature purchasing mechanics.</p>
+        <p class="project-tech">Java • JavaScript • Spring MVC • SQL</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-image-grid">
+        <div class="project-image" style="background-image: url('../Images/RESTful-API-logo-for-light-bg.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/sass.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/sdlc.png')"></div>
+        <div class="project-image" style="background-image: url('../Images/sky1.jpeg')"></div>
+        <div class="project-image" style="background-image: url('../Images/sky2.jpeg')"></div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Blog Application</h3>
+        <p class="project-desc">Full-featured blogging platform with user authentication and content management.</p>
+        <p class="project-tech">Java • Spring Boot • REST API • React</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-content">
+    <h2 class="section-title">About Me</h2>
+    <p>Ambitious Java Developer versed in following established procedures. Offering technical expertise in programming analysis, application analysis, and design. Excellent team player with in-depth knowledge of development tools and languages.</p>
+    <div class="skills-grid">
+      <div class="skill-icon" style="background-image: url('../Images/agile.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/java.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/javascript.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/css.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/html.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/spring-boot-logo.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/mvc.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/tdd.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/sql.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/ea4b66f96009bcbb8dcaeb2607f98199356d9fb4.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/communication.png')"></div>
+      <div class="skill-icon" style="background-image: url('../Images/time.png')"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+    </div>
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Pawan Dahal. All rights reserved.</p>
+  <div class="social-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Email</a>
+  </div>
+</footer>
+
+<script>
+  ScrollReveal().reveal('.project-card', {
+    delay: 200,
+    distance: '20px',
+    origin: 'bottom',
+    interval: 100
+  });
+
+  ScrollReveal().reveal('.skill-tag', {
+    delay: 200,
+    distance: '20px',
+    origin: 'bottom',
+    interval: 50
+  });
+</script>
+</body>
+</html>
